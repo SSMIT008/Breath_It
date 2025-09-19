@@ -1,0 +1,199 @@
+body {
+    background-color: black;
+    color: wheat;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+p {
+    color: wheat;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    color: wheat;
+}
+
+h3 {
+    padding: 10px 20px 75px;
+    text-align: justify;
+}
+
+h5 {
+    text-align: center;
+}
+
+.header {
+    font-size: 3rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: black;
+    text-align: center;
+    font-family: 'Merriweather', 'Georgia', serif;
+}
+
+.animate {
+    color: wheat;
+    /* start as white */
+    display: inline-block;
+    animation: glow 3s infinite ease-in-out;
+}
+
+/* Orange glowing animation */
+@keyframes glow {
+
+    0%,
+    100% {
+        color: wheat;
+        text-shadow: none;
+        transform: scale(1);
+    }
+
+    50% {
+        color: orange;
+        text-shadow: 3px -3px 5px orange, 0px 0px 15px darkorange;
+        transform: scale(1.01);
+        /* ✅ grow letters */
+    }
+}
+
+/* Animate each letter with delay */
+.animate:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.animate:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.animate:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.animate:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.animate:nth-child(6) {
+    animation-delay: 1.0s;
+}
+
+.animate:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.animate:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.animate:nth-child(9) {
+    animation-delay: 1.8s;
+}
+
+.animate:nth-child(10) {
+    animation-delay: 2.0s;
+}
+
+.animate:nth-child(11) {
+    animation-delay: 2.2s;
+}
+
+/* for the "t" after I */
+
+.footer {
+    position: relative;
+    top: 100px;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    font-family: 'Merriweather', 'Georgia', serif;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* allow cards to go to the next row */
+    justify-content: center;
+    /* center the row content */
+    gap: 50px;
+    /* spacing between cards */
+}
+
+.card {
+    flex: 1 1 calc(50% - 20px);
+    /* flexible width: grow, shrink, basis */
+    max-width: 400px;
+    /* optional: max width per card */
+    padding: 15px;
+    background-color: rgb(17, 11, 1);
+    border: 1px solid wheat;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px rgba(238, 223, 183, 0.7);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-body {
+    color: orange;
+}
+
+.player {
+    display: flex;
+    /* make it a flex container */
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically if needed */
+    margin: 20px auto;
+    /* auto left/right margin for horizontal centering */
+    padding: 15px;
+    max-width: 100%;
+    /* never exceed container width */
+    width: 90%;
+    /* scales with container */
+    box-sizing: border-box;
+    /* include padding in width */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 50%;
+        /* Вычисляемая ширина на мобильных устройствах */
+        clear: both;
+        /* Очистка float на мобильных устройствах */
+    }
+
+    .player {
+        width: 50%;
+        /* larger screens, half the card width */
+    }
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    /* ✅ required for transform */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.01);
+    /* ✅ grows smoothly on hover */
+    color: gold;
+    cursor: pointer;
+}
