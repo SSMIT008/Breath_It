@@ -160,6 +160,10 @@ h5 {
         width: 50%;
         /* larger screens, half the card width */
     }
+
+    .volume-slider {
+        display: none !important;
+    }
 }
 
 a {
