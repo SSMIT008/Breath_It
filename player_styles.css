@@ -82,6 +82,6 @@
     }
 
     .volume-slider {
-        display: none;
+        display: none !important;
     }
 }
