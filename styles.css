@@ -104,8 +104,6 @@ h5 {
     animation-delay: 2.2s;
 }
 
-/* for the "t" after I */
-
 .footer {
     position: relative;
     top: 100px;
@@ -150,30 +148,12 @@ h5 {
     color: orange;
 }
 
-.player {
-    display: flex;
-    /* make it a flex container */
-    justify-content: center;
-    /* center horizontally */
-    align-items: center;
-    /* center vertically if needed */
-    margin: 20px auto;
-    /* auto left/right margin for horizontal centering */
-    padding: 15px;
-    max-width: 100%;
-    /* never exceed container width */
-    width: 90%;
-    /* scales with container */
-    box-sizing: border-box;
-    /* include padding in width */
-}
-
 @media (max-width: 768px) {
     .card {
         width: 50%;
-        /* Вычисляемая ширина на мобильных устройствах */
+        /* Mobile devices calculated width */
         clear: both;
-        /* Очистка float на мобильных устройствах */
+        /* Float clean on mobile devices */
     }
 
     .player {

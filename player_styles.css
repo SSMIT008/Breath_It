@@ -1,0 +1,83 @@
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.play-btn {
+    background: orange;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid orange;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.play-btn:hover {
+    transform: scale(1.05);
+}
+
+.play-btn img.icon {
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+    /* prevent clicks from targeting the img itself */
+}
+
+.controls {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls input[type=range] {
+    width: 100%;
+    cursor: pointer;
+}
+
+.time {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.repeat-btn {
+    height: 50px;
+    background: transparent;
+    border: 2px solid orange;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.repeat-btn.active {
+    background: rgba(255, 123, 0, 0.228);
+}
+
+.repeat-btn img.icon {
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+    /* prevent clicks from targeting the img itself */
+}
+
+@media (max-width: 768px) {
+    .controls {
+        max-width: 100%;
+    }
+}
