@@ -80,4 +80,8 @@
     .controls {
         max-width: 100%;
     }
+
+    .volume-slider {
+        display: none;
+    }
 }
