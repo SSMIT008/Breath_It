@@ -161,8 +161,9 @@ h5 {
         /* larger screens, half the card width */
     }
 
-    .volume-slider {
+    .volume {
         display: none !important;
+        clear: both;
     }
 }
 
