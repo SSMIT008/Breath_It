@@ -148,6 +148,13 @@ h5 {
     color: orange;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
     .card {
         width: 50%;
